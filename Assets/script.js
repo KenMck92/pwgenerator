@@ -18,6 +18,10 @@ function generatePassword() {
   // (stores)var for characters
   var characterNumber = window.prompt("How many characters");
   console.log(characterNumber);
+
+  if (!characterNumber) {
+    return;
+  }
   
   if (characterNumber < 8 || characterNumber > 128) {
     window.alert("Quantity has to be at least 8 and no more than 12");
