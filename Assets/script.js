@@ -24,7 +24,7 @@ function generatePassword() {
   }
   
   if (characterNumber < 8 || characterNumber > 128) {
-    window.alert("Quantity has to be at least 8 and no more than 12");
+    window.alert("Quantity has to be at least 8 and no more than 128");
     return;
   }
 
